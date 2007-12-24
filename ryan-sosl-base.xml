@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim include="Nasal/views.xml">
+ 
+  <author>BARANGER Emmanuel (3D) David Megginson (FDM)</author>
+  <aircraft-version>0.1</aircraft-version>
+  <status>Alpha</status>
+   
+  <fuel-fraction>0.8</fuel-fraction>
+  
+  <startup>
+   <splash-texture>Aircraft/Ryan-SoSL/ryan-sosl-splash.rgb</splash-texture>
+  </startup>
+  
+  <systems>
+   <electrical>
+    <path>Aircraft/j3cub/cub-electrical.xml</path>
+   </electrical>
+  </systems> 
+
+  <sound>
+   <path>Aircraft/Ryan-SoSL/Sounds/ryan-sosl-sound.xml</path>
+  </sound>
+
+  <panel>
+   <visibility archive="n">false</visibility>
+  </panel>
+
+  <model>
+   <path archive="y">Aircraft/Ryan-SoSL/Models/ryan-sosl.xml</path>
+  </model>
+
+ </sim>
+
+ <yasim>
+  <ryansosl>
+   <pilot-lb>180</pilot-lb>
+  </ryansosl>
+ </yasim>
+
+ <engines>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+ </engines>
+
+ <input>
+  <keyboard include="Nasal/ryan-sosl-keyboard.xml"/>
+ </input>
+ 
+ <nasal>
+   <ryansosl>
+     <file>Aircraft/Ryan-SoSL/Nasal/doors.nas</file>
+   </ryansosl>
+ </nasal>
+
+</PropertyList>
+
