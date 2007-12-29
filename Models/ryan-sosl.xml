@@ -70,6 +70,14 @@
     </offsets>
   </model>
 
+  <animation>
+    <name>HeliceComplete</name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>helice</object-name>
+    <object-name>bol</object-name>
+  </animation>
+
   <!-- L'hélice --> 
   <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
@@ -113,10 +121,7 @@
 
   <animation>
     <type>spin</type>
-    <object-name>helice</object-name>
-    <object-name>bol</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
+    <object-name>HeliceComplete</object-name>
     <property>/engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>

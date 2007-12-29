@@ -6,7 +6,7 @@
 
   <!-- Altimètre -->
   <model>
-    <path>Aircraft/Ryan-SoSL/Models/Panel/Instruments/altimeter/altimetre.xml</path>
+    <path>Aircraft/Ryan-SoSL/Models/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.161 </y-m>
