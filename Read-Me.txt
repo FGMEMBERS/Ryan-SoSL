@@ -29,9 +29,12 @@ d Open/Close door
 Thanks
 ======
 
+Laurent HAYVEL for the texture and Pierre GEOFFROY for the FDM
+
 ===============
 BARANGER Emmanuel
 December, 23, 2007. 
+January, 05, 2008.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
@@ -67,9 +70,12 @@ d Ouverture/Fermeture de la porte
 Remerciements
 =============
 
+Laurent HAYVEL pour la livrée et Pierre GEOFFROY pour le FDM
+
 ===============
 BARANGER Emmanuel
 23 Décembre 2007.
+05 Janvier 2008.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
