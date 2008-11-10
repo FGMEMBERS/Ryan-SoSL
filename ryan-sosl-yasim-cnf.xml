@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList include="ryan-sosl-base.xml">
+
+  <sim>
+
+    <description>Ryan NYP "Spirit of St Louis" (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>ryan-sosl-yasim</aero>
+
+  </sim>
+  
+</PropertyList>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="ryan-sosl-jsbsim-set.xml"> -->
-<PropertyList include="ryan-sosl-yasim-set.xml">
+<!-- <PropertyList include="ryan-sosl-jsbsim-cnf.xml"> -->
+<PropertyList include="ryan-sosl-yasim-cnf.xml">
 
   <sim>
     <description>Ryan NYP "Spirit of St Louis"</description>

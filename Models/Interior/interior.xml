@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>interieur</object-name>
+    <object-name>periscope</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -0.896 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.108 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -1.256 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.446 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
