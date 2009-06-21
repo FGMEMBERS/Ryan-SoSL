@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -27,7 +27,7 @@
      <y-offset-m archive="y">  0.572 </y-offset-m>	<!-- Up    -->
      <z-offset-m archive="y"> -0.715 </z-offset-m>	<!-- Back  -->
      <pitch-offset-deg> 0.000 </pitch-offset-deg>
-      <default-field-of-view-deg>60</default-field-of-view-deg>
+      <default-field-of-view-deg>85</default-field-of-view-deg>
     </config>
   </view>
 

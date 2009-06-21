@@ -1,19 +1,17 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <PropertyList>
 
   <path>alt.ac</path>
 
   <animation>
-    <object-name>Face</object-name>
-    <object-name>Needle1</object-name>
-    <object-name>Needle2</object-name>
-    <object-name>Needle3</object-name>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
     <object-name>PressureDial</object-name>
-    <object-name>Fond</object-name>
-    <object-name>visse1</object-name>
-    <object-name>visse2</object-name>
-    <object-name>visse3</object-name>
-    <object-name>visse4</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -32,22 +30,22 @@
 
   <animation>
     <type>material</type>
-    <object-name>Face</object-name>
-    <object-name>Needle1</object-name>
-    <object-name>Needle2</object-name>
-    <object-name>Needle3</object-name>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
     <object-name>PressureDial</object-name>
     <emission>
-      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>Needle1</object-name>
+    <object-name>needle1</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>
     <axis>
@@ -59,7 +57,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Needle2</object-name>
+    <object-name>needle2</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.036</factor>
     <axis>
@@ -71,7 +69,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Needle3</object-name>
+    <object-name>needle3</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.0036</factor>
     <axis>
@@ -98,5 +96,4 @@
   </animation>
 
 </PropertyList>
-
 

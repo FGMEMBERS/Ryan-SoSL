@@ -1,19 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <path>turn.ac</path>
 
   <animation>
-    <object-name>Face</object-name>
-    <object-name>Needle1</object-name>
-    <object-name>Background</object-name>
-    <object-name>Ball</object-name>
-    <object-name>Fond</object-name>
-    <object-name>visse1</object-name>
-    <object-name>visse2</object-name>
-    <object-name>visse3</object-name>
-    <object-name>visse4</object-name>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>background</object-name>
+    <object-name>ball</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -32,21 +29,21 @@
 
   <animation>
     <type>material</type>
-    <object-name>Face</object-name>
-    <object-name>Needle1</object-name>
-    <object-name>Background</object-name>
-    <object-name>Ball</object-name>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>background</object-name>
+    <object-name>ball</object-name>
     <emission>
-      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>Ball</object-name>
+    <object-name>ball</object-name>
     <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <min> -1.1 </min>
     <max>  1.1 </max>
@@ -68,7 +65,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Needle1</object-name>
+    <object-name>needle1</object-name>
     <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
     <factor>8.0</factor>
     <axis>

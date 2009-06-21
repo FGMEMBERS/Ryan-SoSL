@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -133,9 +133,9 @@
   <model>
     <path>Aircraft/Ryan-SoSL/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -191,9 +191,9 @@
       <z-m>  0.114 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -209,9 +209,9 @@
       <z-m> 0.534 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -227,9 +227,9 @@
       <z-m> 0.547 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -245,9 +245,9 @@
       <z-m>  0.822 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -262,33 +262,29 @@
       <z-m>  0.822 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
   <!-- Compression -->
   <animation>
-    <type>rotate</type>
+    <name>EnsembleGauche</name>
     <object-name>roueG</object-name>
     <object-name>axeG</object-name>
     <object-name>axe2G</object-name>
     <object-name>cacheG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>EnsembleGauche</object-name>
     <property>/gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> 14.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.300 </ind>
-        <dep> 0.000 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.000 </dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> 14 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -2.258 </x-m>
@@ -296,9 +292,9 @@
       <z-m> -0.510 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -307,18 +303,9 @@
     <object-name>suspensionG</object-name>
     <property>/gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 5.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.300 </ind>
-        <dep> 0.000 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.000 </dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> 5 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> 0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -2.245 </x-m>
@@ -326,32 +313,28 @@
       <z-m> -0.181 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
   <animation>
-    <type>rotate</type>
+    <name>EnsembleDroit</name>
     <object-name>roueD</object-name>
     <object-name>axeD</object-name>
     <object-name>axe2D</object-name>
     <object-name>cacheD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>EnsembleDroit</object-name>
     <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind>   0.0 </ind>
-        <dep> -14.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.300 </ind>
-        <dep> 0.000 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.000 </dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> -14 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -2.258 </x-m>
@@ -359,9 +342,9 @@
       <z-m> -0.510 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -370,18 +353,9 @@
     <object-name>suspensionD</object-name>
     <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> -5.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.300 </ind>
-        <dep> 0.000 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.000 </dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> -5 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -2.245 </x-m>
@@ -389,9 +363,9 @@
       <z-m> -0.181 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -407,9 +381,9 @@
       <z-m> -0.893 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -424,17 +398,22 @@
       <z-m> -0.893 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
   <!-- Door -->
   <animation>
-    <type>rotate</type>
+    <name>EnsemblePorte</name>
     <object-name>porte</object-name>
     <object-name>cadreD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>EnsemblePorte</object-name>
     <property>/instrumentation/doors/crew/position-norm</property>
     <factor>75</factor>
     <center>
@@ -443,9 +422,9 @@
       <z-m>  0.078 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
