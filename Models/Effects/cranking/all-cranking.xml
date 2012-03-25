@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Cranking effects -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m>  0.226 </y-m>
+      <z-m>  0.598 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m>  0.484 </y-m>
+      <z-m>  0.339 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m>  0.516 </y-m>
+      <z-m> -0.024 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m>  0.306 </y-m>
+      <z-m> -0.324 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m> -0.047 </y-m>
+      <z-m> -0.418 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m> -0.378 </y-m>
+      <z-m> -0.263 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m> -0.532 </y-m>
+      <z-m>  0.068 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m> -0.437 </y-m>
+      <z-m>  0.421 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.444 </x-m>
+      <y-m> -0.138 </y-m>
+      <z-m>  0.630 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

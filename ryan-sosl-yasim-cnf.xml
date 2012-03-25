@@ -5,6 +5,7 @@
   <sim>
 
     <description>Ryan NYP "Spirit of St Louis" (YASim)</description>
+    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Laurent HAYVEL (Texture)</author>
     <flight-model>yasim</flight-model>
     <aero>ryan-sosl-yasim</aero>
 

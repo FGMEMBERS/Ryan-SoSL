@@ -7,19 +7,33 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Ryan-SoSL/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>fuselage</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name> 
+    <object-name>nez</object-name>
     <object-name>bol</object-name>
     <object-name>helice</object-name>
+
+    <object-name>fuselage</object-name>
     <object-name>suspensionG</object-name>
     <object-name>suspensionD</object-name>
     <object-name>cadreG</object-name>
@@ -38,6 +52,9 @@
     <object-name>cacheG</object-name>
     <object-name>cacheD</object-name>
     <object-name>porte</object-name>
+    <object-name>trous</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name> 
     <object-name>patte</object-name>
 
     <!-- Objets transparents -->
@@ -47,26 +64,12 @@
   </animation>
 
   <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>verriere</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
-    <object-name>fuselage</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name> 
+    <object-name>nez</object-name>
     <object-name>bol</object-name>
     <object-name>helice</object-name>
+
+    <object-name>fuselage</object-name>
     <object-name>suspensionG</object-name>
     <object-name>suspensionD</object-name>
     <object-name>cadreG</object-name>
@@ -85,6 +88,9 @@
     <object-name>cacheG</object-name>
     <object-name>cacheD</object-name>
     <object-name>porte</object-name>
+    <object-name>trous</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name> 
     <object-name>patte</object-name>
 
     <property-base>sim/model/livery</property-base>
@@ -121,6 +127,27 @@
 -->
   </animation>
 
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>nez</object-name>
+    <object-name>bol</object-name>
+    <object-name>helice</object-name>
+  </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+  </animation>
+
   <animation>
     <name>HeliceComplete</name>
     <object-name>propdisc</object-name>
@@ -129,13 +156,64 @@
     <object-name>bol</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG en attendant Rembrandt -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.800 </z-m>
+    </offsets>
+  </model>
+
   <!-- Interieur -->
   <model>
     <path>Aircraft/Ryan-SoSL/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- Engine -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Engine/whirlwind.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
+      <x-m> -3.551 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.114 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cranking -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/cranking/all-cranking.xml</path>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -2.326 </x-m>
+      <y-m> -1.541 </y-m>
+      <z-m> -1.277 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -2.326 </x-m>
+      <y-m>  1.541 </y-m>
+      <z-m> -1.277 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Patte de queue -->
+  <model>
+    <path>Aircraft/Ryan-SoSL/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m>  2.965 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.225 </z-m>
     </offsets>
   </model>
 
@@ -146,8 +224,8 @@
     <object-name>propdisc</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
-        <value>900</value>
+        <property>engines/engine[0]/rpm</property>
+        <value> 900 </value>
       </greater-than>
     </condition>
   </animation>
@@ -158,12 +236,12 @@
     <condition>
     <and>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
-        <value>300.000</value>
+        <property>engines/engine[0]/rpm</property>
+        <value> 300.000 </value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
-        <value>900.001</value>
+        <property>engines/engine[0]/rpm</property>
+        <value> 900.001 </value>
       </less-than>
     </and>
     </condition>
@@ -174,8 +252,8 @@
     <object-name>helice</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
-	<value>900</value>
+        <property>engines/engine[0]/rpm</property>
+	<value> 900 </value>
       </less-than>
     </condition>
   </animation>
@@ -183,7 +261,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -4.010 </x-m>
@@ -201,10 +279,10 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>/controls/flight/elevator</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <factor>11</factor>
     <center>
-      <x-m> 3.364 </x-m>
+      <x-m> 3.385 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.534 </z-m>
     </center>
@@ -219,17 +297,15 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>/controls/flight/rudder</property>
-    <factor>20</factor>
-    <center>
-      <x-m> 3.465 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.547 </z-m>
-    </center>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 20 </factor>
     <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
+      <x1-m> 3.495 </x1-m>
+      <y1-m> 0.000 </y1-m>
+      <z1-m> 0.130 </z1-m>
+      <x2-m> 3.483 </x2-m>
+      <y2-m> 0.000 </y2-m>
+      <z2-m> 1.187 </z2-m>
     </axis>
   </animation>
 
@@ -237,12 +313,12 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronG</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
-    <factor>20</factor>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 20 </factor>
     <center>
-      <x-m> -1.026 </x-m>
+      <x-m> -0.962 </x-m>
       <y-m> -5.014 </y-m>
-      <z-m>  0.822 </z-m>
+      <z-m>  0.816 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -254,17 +330,17 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronD</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
-    <factor>20</factor>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 20 </factor>
     <center>
-      <x-m> -1.026 </x-m>
+      <x-m> -0.962 </x-m>
       <y-m>  5.014 </y-m>
-      <z-m>  0.822 </z-m>
+      <z-m>  0.816 </z-m>
     </center>
     <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -280,7 +356,7 @@
   <animation>
     <type>rotate</type>
     <object-name>EnsembleGauche</object-name>
-    <property>/gear/gear[0]/compression-norm</property>
+    <property>gear/gear[0]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 14 </dep></entry>
       <entry><ind> 0.3 </ind><dep>  0 </dep></entry>
@@ -301,7 +377,7 @@
   <animation>
     <type>rotate</type>
     <object-name>suspensionG</object-name>
-    <property>/gear/gear[0]/compression-norm</property>
+    <property>gear/gear[0]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 5 </dep></entry>
       <entry><ind> 0.3 </ind><dep> 0 </dep></entry>
@@ -330,7 +406,7 @@
   <animation>
     <type>rotate</type>
     <object-name>EnsembleDroit</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
+    <property>gear/gear[1]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> -14 </dep></entry>
       <entry><ind> 0.3 </ind><dep>   0 </dep></entry>
@@ -351,7 +427,7 @@
   <animation>
     <type>rotate</type>
     <object-name>suspensionD</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
+    <property>gear/gear[1]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> -5 </dep></entry>
       <entry><ind> 0.3 </ind><dep>  0 </dep></entry>
@@ -373,7 +449,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>/gear/gear[0]/rollspeed-ms</property>
+    <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -2.326 </x-m>
@@ -390,7 +466,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -2.326 </x-m>
@@ -414,8 +490,8 @@
   <animation>
     <type>rotate</type>
     <object-name>EnsemblePorte</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
-    <factor>75</factor>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> 75 </factor>
     <center>
       <x-m> -1.344 </x-m>
       <y-m>  0.521 </y-m>
