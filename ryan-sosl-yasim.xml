@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Ryan NYP - BARANGER Emmanuel (2007)
       Updated - GEOFFROY Pierre   (2007)
       Updated - BARANGER Emmanuel (2012) with Melchior's script
+      Add "YASIM_VERSION_CURRENT" by helijah (2014)
 
      Sources              : http://en.wikipedia.org/wiki/Spirit_of_St._Louis
 
@@ -14,8 +15,7 @@
      Maximum speed        : 220 km/h      ( 119.9 kt    )
      Cruise speed         : 160-175 km/h  ( 87.2-95.4 kt)
 --> 
-
-<airplane mass="2150" >
+<airplane mass="2150" version="YASIM_VERSION_CURRENT">
 
   <approach speed="40" aoa="10" fuel="0.05" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
@@ -24,7 +24,7 @@
   </approach>
   
   <cruise speed="95" alt="5000" fuel="0.5" >
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0" />
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1" />
     <control-setting axis="/controls/engines/engine[0]/mixture" value="0.6" />
     <solve-weight idx="0" weight="180"/>
   </cruise>
@@ -34,14 +34,10 @@
   <fuselage ax="3.835" ay="0.0" az="0.114" bx="-3.457" by="0" bz="0.358" width="1.042" taper="0.3" midpoint="0.2"/>
 
   <wing x="1.567" y="0.461" z="0.883"
-	chord="2.156"
-	length="6.570"
-        taper="1.0"
-        incidence="0"
-	sweep="0"
-	dihedral="0"
-	twist="0"
-	camber="0.1">
+        chord="2.156"
+        length="6.57"
+        taper="1"
+        camber="0.1">
         <stall aoa="18" width="1" peak="1.5"/>
         <flap1 start="0.57" end="0.85" lift="1.4" drag="1.1"/>
 
@@ -53,13 +49,11 @@
   </wing>
   
   <hstab x="-3.347" y="0.0" z="0.537" 
-	 chord="1.609" 
-	 length="1.562" 
-         taper="1.0" 
-	 sweep="0" 
-	 incidence="0"> 
+         chord="1.609" 
+         length="1.562" 
+         taper="1"> 
          <stall aoa="16" width="1" peak="1.5"/>
-         <flap0 start="0.0" end="1" lift="1.55" drag="1.3"/>
+         <flap0 start="0" end="1" lift="1.55" drag="1.3"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -68,11 +62,9 @@
   </hstab>
 
   <vstab x="-3.576" y="0" z="0.127" 
-	 chord="1.264" 
-	 length="1.367" 
-         taper="1.0" 
-	 sweep="0" 
-	 incidence="0">
+         chord="1.264" 
+         length="1.367" 
+         taper="1">
          <stall aoa="14" width="1" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.55" drag="1.4"/>
 
@@ -95,7 +87,7 @@
   -->
   <propeller x="3.551" y="0.0" z="0.114"  
              mass="520"
-             moment="61"
+             moment="11"
              radius="1.3165"
              cruise-power="202"
              cruise-alt="5000" 
@@ -163,4 +155,3 @@
   <ballast x="1.72" y="0.0" z="-0.780" mass="400" />
 
 </airplane>
-

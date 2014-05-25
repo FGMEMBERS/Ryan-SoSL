@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 2
 OBJECT poly
@@ -7,8 +7,8 @@ name "bloc"
 loc 0 0 -0
 data 4
 bloc
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 515
 -0.115987 -0.188928 -0.188928
@@ -4245,8 +4245,8 @@ name "moteurlow"
 loc 0 0 -0
 data 9
 moteurlow
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 11640
 -0.01108 0.546511 -0.147715

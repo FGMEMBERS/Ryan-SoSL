@@ -1,6 +1,4 @@
-Air-Maric
+default
 
-These liveries were made by : Laurent HAYVEL 2008
-
-Thanks to him.
+These liveries were made by : Emmanuel BARANGER 2008
 

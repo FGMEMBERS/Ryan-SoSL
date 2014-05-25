@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList> 
-
+  
   <fx> 
-
+    
     <crank> 
       <name>engstart</name>
       <path>Aircraft/Ryan-SoSL/Sounds/starter.wav</path>
@@ -21,7 +21,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <crank> 
       <name>cough</name>
       <path>Sounds/coughing.wav</path>
@@ -39,7 +39,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <engine> 
       <name>engine idle rpm</name>
       <mode>looped</mode>
@@ -76,7 +76,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-
+    
     <engine-2> 
       <name>engine low rpm</name>
       <mode>looped</mode>
@@ -113,7 +113,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-2>
-
+    
     <!-- -->
     <engine-4> 
       <name>engine high rpm</name>
@@ -147,7 +147,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-4>
-
+    
     <engine-0> 
       <name>engine shut down rpm</name>
       <path>Aircraft/Ryan-SoSL/Sounds/merlin_shutdown.wav</path>
@@ -175,7 +175,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-0>
-
+    
     <rumble> 
       <name>rumble</name>
       <mode>looped</mode>
@@ -196,7 +196,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </rumble>
-
+    
     <gear> 
       <name>gear</name>
       <mode>in-transit</mode>
@@ -205,7 +205,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
-
+    
     <squeal> 
       <name>squeal</name>
       <path>Sounds/squeal.wav</path>
@@ -239,7 +239,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </squeal>
-
+    
     <wind-canopy-closed> 
       <name>wind</name>
       <mode>looped</mode>
@@ -272,7 +272,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </wind-canopy-closed>
-
+    
     <wind-canopy-open> 
       <name>wind-loud</name>
       <mode>looped</mode>
@@ -305,7 +305,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </wind-canopy-open>
-
+    
     <stall> 
       <name>gear up warn</name>
       <mode>looped</mode>
@@ -333,7 +333,7 @@
       <reference-dist>10.0</reference-dist>
       <max-dist>20.0</max-dist>
     </stall>
-
+    
     <click> 
       <name>mag left click down</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -344,7 +344,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>mag left click up</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -357,7 +357,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>mag right click down</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -368,7 +368,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>mag right click up</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -381,7 +381,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>rgs main click down</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -392,7 +392,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>rgs main click up</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -405,7 +405,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>nav lights click down</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -418,7 +418,7 @@
         <max>0.9</max>
       </volume>
     </click>
-
+    
     <click> 
       <name>nav lights click up</name>
       <path>Aircraft/Ryan-SoSL/Sounds/click.wav</path>
@@ -433,8 +433,7 @@
         <max>0.9</max>
       </volume>
     </click>
-
+    
   </fx>
-
+  
 </PropertyList>
-

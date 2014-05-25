@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -15,19 +15,12 @@
     <object-name>intverriere</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intverriere</object-name>
-    <object-name>mirroir</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intverriere</object-name>
-  </animation>
-
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Ryan-SoSL/Models/Effects/Glass/glass</inherits-from>
+    <object-name>verriere</object-name>
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Ryan-SoSL/Models/Pilot/pilot.xml</path>
@@ -72,4 +65,3 @@
   </animation>
 
 </PropertyList>
-

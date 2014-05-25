@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 7
 OBJECT poly
@@ -7,8 +7,8 @@ name "bougies"
 loc 0 0 -0
 data 7
 bougies
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 444
 -0.106636 0.47358 -0.000285
@@ -3371,8 +3371,8 @@ name "caches"
 loc 0 0 -0
 data 6
 caches
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 583
 -0.118796 0.587646 0.121952
@@ -8070,8 +8070,8 @@ name "cames"
 loc 0 0 -0
 data 5
 cames
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 573
 -0.148888 0.287692 0.038788
@@ -11991,8 +11991,8 @@ name "ecrous"
 loc 0 0 -0
 data 6
 ecrous
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 1128
 -0.103386 0.573909 -0.071787
@@ -20562,8 +20562,8 @@ name "pistons"
 loc 0 0 -0
 data 7
 pistons
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 4821
 -0.095535 0.263562 -0.015584
@@ -54814,8 +54814,8 @@ name "souflets"
 loc 0 0 -0
 data 8
 souflets
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 1576
 -0.148888 0.287692 -0.038674
@@ -66657,8 +66657,8 @@ name "tuyaux"
 loc 0 0 -0
 data 6
 tuyaux
-texture "colors.png"
-texrep 1 1
+texture "whirlwind.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 1632
 -0.116998 0.563025 0.075008

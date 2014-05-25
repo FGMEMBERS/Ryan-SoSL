@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="ryan-sosl-jsbsim-cnf.xml"> -->
-<PropertyList include="ryan-sosl-yasim-cnf.xml">
-
+<PropertyList include="ryan-sosl-base.xml">
+  
   <sim>
 
     <description>Ryan NYP "Spirit of St Louis" (YASim)</description>
     <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Laurent HAYVEL (Texture)</author>
-
+    <flight-model>yasim</flight-model>
+    <aero>ryan-sosl-yasim</aero>
+    
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 1 </systems>
@@ -18,4 +19,3 @@
   </sim>
 
 </PropertyList>
-
